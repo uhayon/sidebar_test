@@ -1,0 +1,28 @@
+.container {
+    cursor: pointer;
+    pointer-events: all;
+    .line {
+        stroke-linecap: round; 
+        stroke-width: 5px;
+        transition: transform 0.4s ease-in-out, opacity 0.2s ease-in-out;
+        opacity: 1;
+        transform: rotate(0) translateX(0) translateY(0);
+        &:first-child {
+            transform-origin: 0px 5px;
+        }
+        &:nth-child(3) {
+            transform-origin: 0px 45px;
+        }
+    }
+    &.expanded {
+        .line:first-child {
+            transform: rotate(30deg);
+        }
+        .line:nth-child(3) {
+            transform: rotate(-30deg);
+        }
+        .line:nth-child(2) {
+            opacity: 0;
+        }
+    }
+}

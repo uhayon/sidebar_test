@@ -1,0 +1,23 @@
+$main-color: #001f3f;
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.login {
+    border: 1px solid $main-color;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 5px 5px 10px 0px #888888;
+    background-color: rgba(255, 255, 255, .25);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    > input {
+        width: 100%;
+        margin: 5px 0;
+    }
+}

@@ -1,0 +1,16 @@
+$main-light-color: #0074D9;
+
+.sidebarItem {
+    color: #fff;
+    cursor: pointer;
+    padding: 3px;
+    margin: 10px 0;
+    border-bottom: 5px solid rgba(255, 255, 255, 0);
+    &.sidebarItemActive {
+        background-color: $main-light-color;
+        border-bottom-color: rgba(255, 255, 255, 0.75);        
+    }
+    &:hover {
+        background-color: $main-light-color;
+    }
+}
